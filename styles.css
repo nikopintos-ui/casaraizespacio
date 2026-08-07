@@ -412,20 +412,38 @@ a, button, input[type="submit"], .cta-button, .form-submit, .contact-btn {
 
 .highlights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.5rem;
     margin-top: 1.5rem;
+}
+
+.highlight-item {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0.05) 100%);
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.25) 0%, rgba(212, 175, 55, 0.1) 100%);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+    border-color: #dbb76f;
 }
 
 .highlight-item h3 {
     color: var(--accent);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .highlight-item p {
-    color: var(--text-dark);
-    font-size: 0.95rem;
+    color: var(--text);
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 .gallery {
