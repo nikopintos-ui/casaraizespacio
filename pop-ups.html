@@ -6,6 +6,62 @@
     <title>Pop-Ups - Casa Raíz</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        .contact-info {
+            background: var(--secondary);
+            padding: 3rem 2rem;
+            border-bottom: 1px solid var(--accent);
+        }
+        .contact-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        .contact-item h3 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+        }
+        .contact-item p {
+            color: var(--text);
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+        .contact-item a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        .plans-pricing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .plan-card {
+            border: 2px solid var(--accent);
+            padding: 2rem;
+            text-align: center;
+            background: rgba(212, 175, 55, 0.08);
+        }
+        .plan-card .price {
+            font-size: 1.8rem;
+            color: var(--accent);
+            margin: 1rem 0;
+            font-weight: 300;
+        }
+        .plan-card .detail {
+            color: var(--text-dark);
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+    </style>
 </head>
 <body>
     <!-- WhatsApp Button -->
@@ -39,78 +95,156 @@
         </div>
     </section>
 
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <div class="contact-grid">
+            <div class="contact-item">
+                <h3>📞 Teléfono</h3>
+                <p><a href="tel:+5491165874154">+54 11 6587 4154</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>📧 Email</h3>
+                <p><a href="mailto:casaraizeb@gmail.com">casaraizeb@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>📍 Ubicación</h3>
+                <p>Sarmiento 4333, Almagro<br>Buenos Aires, Argentina</p>
+            </div>
+            <div class="contact-item">
+                <h3>📷 Instagram</h3>
+                <p><a href="https://www.instagram.com/casaraiz.espacio/" target="_blank">@casaraiz.espacio</a></p>
+            </div>
+        </div>
+        <p style="text-align: center; color: var(--text-dark); margin-top: 2rem; font-size: 0.95rem;">
+            *Consultar por otros horarios y formatos disponibles
+        </p>
+    </section>
+
     <!-- Service Detail -->
     <section class="service-detail">
         <h1>Pop-Ups en Casa Raíz</h1>
         <p>Los pop-ups son experiencias temporales que crean buzz y conectan directamente con tu audiencia. En Casa Raíz ofrecemos el espacio perfecto para que tu marca brillar con una propuesta única y memorable.</p>
 
+        <!-- Plano del Espacio -->
         <div class="service-highlights">
-            <h2 style="margin-top: 0; color: var(--accent);">¿Por qué Casa Raíz?</h2>
+            <h2 style="margin-top: 0; color: var(--accent);">Nuestro Espacio</h2>
+            <img src="plano.jpg" style="width: 100%; max-width: 900px; border-radius: 8px; margin: 2rem auto; display: block; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+        </div>
+
+        <!-- Formato -->
+        <div class="service-highlights">
+            <h2 style="margin-top: 0; color: var(--accent);">Formato Pop-Up</h2>
             <div class="highlights-grid">
                 <div class="highlight-item">
-                    <h3>📍 Ubicación Premium</h3>
-                    <p>Almagro es el barrio más buscado de Buenos Aires para experiencias exclusivas.</p>
+                    <h3>⏰ Horarios</h3>
+                    <p><strong style="font-size: 1.3rem; color: var(--accent);">20h - 02h</strong><br/>*6 horas totales</p>
                 </div>
                 <div class="highlight-item">
-                    <h3>✨ Espacio Histórico</h3>
-                    <p>Una casona de época que brinda autenticidad y elegancia natural.</p>
+                    <h3>👥 Capacidad</h3>
+                    <p><strong style="font-size: 1.3rem; color: var(--accent);">70</strong><br/>personas</p>
                 </div>
                 <div class="highlight-item">
-                    <h3>🎨 Versátil</h3>
-                    <p>Múltiples espacios para adaptar tu visión creativa.</p>
+                    <h3>🎫 Tickets</h3>
+                    <p><strong style="font-size: 1.3rem; color: var(--accent);">100%</strong><br/>Productora</p>
                 </div>
                 <div class="highlight-item">
-                    <h3>👥 Capacidad Flexible</h3>
-                    <p>Desde 30 hasta 150 personas según tus necesidades.</p>
-                </div>
-                <div class="highlight-item">
-                    <h3>🔧 Infraestructura</h3>
-                    <p>Servicios de catering, sonido, iluminación y más disponibles.</p>
-                </div>
-                <div class="highlight-item">
-                    <h3>📱 Redes Sociales</h3>
-                    <p>Espacios instagrameables que generan contenido viral.</p>
+                    <h3>🍹 Barra</h3>
+                    <p><strong style="font-size: 1.3rem; color: var(--accent);">100%</strong><br/>Casa Raíz</p>
                 </div>
             </div>
         </div>
 
+        <!-- Technical Rider -->
+        <div class="service-highlights">
+            <h2 style="margin-top: 0; color: var(--accent);">Technical Rider Incluido</h2>
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <h3>🎛️ Consola</h3>
+                    <p>Heropure SB-6000</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>🔊 Bafles</h3>
+                    <p>P.A. Samson Resound</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>📽️ Proyector</h3>
+                    <p>X-View PJ550 Pro</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>🎤 Micrófonia</h3>
+                    <p>y Cableado completo</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>⚡ Emergencia</h3>
+                    <p>Grupo Electrógeno</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Personal Incluido -->
+        <div class="service-highlights">
+            <h2 style="margin-top: 0; color: var(--accent);">Incluye Personal Calificado</h2>
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <h3>🍹 Barman</h3>
+                    <p>Calificado</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>🎯 Atención</h3>
+                    <p>en Barra</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>✨ Servicio</h3>
+                    <p>de Limpieza</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>👥 Atención</h3>
+                    <p>en Salón</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Planes y Precios -->
+        <div class="service-highlights">
+            <h2 style="margin-top: 0; color: var(--accent);">Planes y Precios</h2>
+            <div class="plans-pricing">
+                <div class="plan-card">
+                    <h3>Días de Semana</h3>
+                    <div class="price">$500.000 ARS</div>
+                    <div class="detail">Booking Fee</div>
+                </div>
+                <div class="plan-card">
+                    <h3>Viernes</h3>
+                    <div class="price">$600.000 ARS</div>
+                    <div class="detail">Booking Fee</div>
+                </div>
+                <div class="plan-card">
+                    <h3>Sábados</h3>
+                    <div class="price">$700.000 ARS</div>
+                    <div class="detail">Booking Fee</div>
+                </div>
+            </div>
+            <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(212, 175, 55, 0.1); border-left: 4px solid var(--accent); border-radius: 4px;">
+                <p style="color: var(--text); margin-bottom: 1rem;">
+                    <strong>10%</strong> de descuento adicional por pago en efectivo
+                </p>
+                <p style="color: var(--text); margin-bottom: 1rem;">
+                    <strong>100%</strong> de la venta de tickets para la productora
+                </p>
+                <p style="color: var(--text);">
+                    <strong>100%</strong> barra de tragos y comida para Casa Raíz
+                </p>
+            </div>
+        </div>
+
+        <!-- Galería de Eventos -->
         <div class="gallery">
-            <h2>Galería</h2>
+            <h2>Nuestro Espacio en Eventos</h2>
             <div class="gallery-grid">
-                <div class="gallery-item" style="background-image: url('foto1.png'); background-size: cover; background-position: center;"></div>
-                <div class="gallery-item" style="background-image: url('foto2.png'); background-size: cover; background-position: center;"></div>
-                <div class="gallery-item" style="background-image: url('foto3.png'); background-size: cover; background-position: center;"></div>
-                <div class="gallery-item" style="background-image: url('foto4.png'); background-size: cover; background-position: center;"></div>
-            </div>
-        </div>
-
-        <div class="service-highlights">
-            <h2 style="margin-top: 0; color: var(--accent);">Opciones de Pop-Up</h2>
-            <div class="highlights-grid">
-                <div class="highlight-item">
-                    <h3>Lanzamiento de Producto</h3>
-                    <p>Presenta tu nuevo producto en un ambiente exclusivo y controlado.</p>
-                </div>
-                <div class="highlight-item">
-                    <h3>Instalación Artística</h3>
-                    <p>Exhibiciones interactivas que generan experiencias inmersivas.</p>
-                </div>
-                <div class="highlight-item">
-                    <h3>Degustación Temática</h3>
-                    <p>Experiencias sensoriales con productos, bebidas o servicios.</p>
-                </div>
-                <div class="highlight-item">
-                    <h3>Showroom Temporal</h3>
-                    <p>Crea un punto de venta exclusivo por un tiempo limitado.</p>
-                </div>
-                <div class="highlight-item">
-                    <h3>Experiencia Inmersiva</h3>
-                    <p>Propuestas innovadoras que integran arte, tecnología y emoción.</p>
-                </div>
-                <div class="highlight-item">
-                    <h3>Pop-Up Colaborativo</h3>
-                    <p>Unete con otras marcas para crear algo realmente especial.</p>
-                </div>
+                <div class="gallery-item" style="background-image: url('gente1.png'); background-size: cover; background-position: center;"></div>
+                <div class="gallery-item" style="background-image: url('gente2.png'); background-size: cover; background-position: center;"></div>
+                <div class="gallery-item" style="background-image: url('gente3.png'); background-size: cover; background-position: center;"></div>
+                <div class="gallery-item" style="background-image: url('genta5.png'); background-size: cover; background-position: center;"></div>
             </div>
         </div>
 
