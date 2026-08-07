@@ -219,11 +219,19 @@ a, button, input[type="submit"], .cta-button, .form-submit, .contact-btn {
     border-radius: 4px;
     overflow: hidden;
     transition: all 0.3s ease;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(201, 169, 97, 0.2);
+}
+
+.service-card:hover .service-link {
+    color: #dbb76f;
 }
 
 .service-image {
