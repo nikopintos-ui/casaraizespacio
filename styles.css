@@ -99,6 +99,7 @@ a, button, input[type="submit"], .cta-button, .form-submit, .contact-btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
 
 .logo h1 {
