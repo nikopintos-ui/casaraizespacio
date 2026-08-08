@@ -125,6 +125,24 @@ a, button, input[type="submit"], .cta-button, .form-submit, .contact-btn {
     color: var(--accent);
 }
 
+.nav-social {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-social a {
+    color: var(--text);
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-social a:hover {
+    color: var(--accent);
+}
+
 /* Hero Section */
 .hero {
     min-height: 60vh;
