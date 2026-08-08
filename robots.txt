@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://casaraizespacio.netlify.app/sitemap.xml
+
+# Desallow bots lentos
+User-agent: AhrefsBot
+User-agent: SemrushBot
+Disallow: /
