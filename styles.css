@@ -487,14 +487,48 @@ a, button, input[type="submit"], .cta-button, .form-submit, .contact-btn {
     transition: all 0.3s ease;
 }
 
-.event-item:hover {
-    background: rgba(212, 175, 55, 0.05);
-    transform: translateX(4px);
+.event-item.featured {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
+    border: 2px solid var(--accent);
 }
 
-.event-item.past {
-    opacity: 0.6;
+.event-item.featured:hover {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0.08) 100%);
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.event-header > div {
+    flex: 1;
+}
+
+.event-details {
+    width: 100%;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.event-item.upcoming {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
     border-color: var(--text-dark);
+    opacity: 0.7;
+}
+
+.event-item.upcoming:hover {
+    background: rgba(212, 175, 55, 0.03);
+    transform: none;
 }
 
 .event-date {
@@ -504,10 +538,28 @@ a, button, input[type="submit"], .cta-button, .form-submit, .contact-btn {
     letter-spacing: 0.5px;
 }
 
-.event-dj {
+.event-time {
     font-size: 0.95rem;
     color: var(--text-dark);
     margin-top: 0.3rem;
+}
+
+.event-dj {
+    font-size: 0.95rem;
+    color: var(--text);
+    margin-top: 0.3rem;
+}
+
+.event-dj:first-child {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.event-coming {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    font-style: italic;
+    margin-top: 0.5rem;
 }
 
 .event-link {
@@ -519,26 +571,16 @@ a, button, input[type="submit"], .cta-button, .form-submit, .contact-btn {
     font-weight: 600;
     transition: all 0.3s ease;
     white-space: nowrap;
-    margin-left: 1rem;
+}
+
+.event-item.featured .event-link {
+    align-self: flex-end;
 }
 
 .event-link:hover {
     background: #dbb76f;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(201, 169, 97, 0.3);
-}
-
-.event-link.disabled {
-    background: var(--text-dark);
-    color: var(--primary);
-    cursor: not-allowed;
-    opacity: 0.7;
-}
-
-.event-link.disabled:hover {
-    background: var(--text-dark);
-    transform: none;
-    box-shadow: none;
 }
 
 .contact-form {
