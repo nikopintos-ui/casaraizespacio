@@ -3,7 +3,11 @@ Allow: /
 
 Sitemap: https://casaraizespacio.netlify.app/sitemap.xml
 
-# Desallow bots lentos
+# Bloquear bots lentos y rastreadores agresivos
 User-agent: AhrefsBot
 User-agent: SemrushBot
+User-agent: DotBot
 Disallow: /
+
+# Dar tiempo a los bots para rastrear
+Crawl-delay: 2

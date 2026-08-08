@@ -8,6 +8,7 @@
     <meta name="keywords" content="eventos corporativos, conferencias, salones de eventos, reuniones de negocios, team building, celebraciones corporativas, Almagro, lugares para eventos, after office">
     <meta property="og:title" content="Eventos Corporativos | Casa Raíz Almagro">
     <meta property="og:description" content="Espacios premium para tu empresa. Conferencias, reuniones y celebraciones en un entorno elegante y profesional.">
+    <link rel="canonical" href="https://casaraizespacio.netlify.app/eventos-corporativos.html">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="logo.png">
     <script type="application/ld+json">
@@ -313,8 +314,12 @@
         }
 
         function updateSlider() {
-            const offset = -currentIndex * 100;
-            sliderTrack.style.transform = `translateX(${offset}%)`;
+            const sliderWrapper = document.querySelector('.slider-wrapper');
+            const gapValue = parseFloat(getComputedStyle(sliderTrack).gap) || 0;
+            const wrapperWidth = sliderWrapper.clientWidth;
+            const itemWidth = wrapperWidth + gapValue;
+            const offset = -currentIndex * itemWidth;
+            sliderTrack.style.transform = `translateX(${offset}px)`;
 
             document.querySelectorAll('.dot').forEach((dot, i) => {
                 dot.classList.toggle('active', i === currentIndex);
