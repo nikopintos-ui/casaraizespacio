@@ -197,6 +197,18 @@ a, button, input[type="submit"], .cta-button, .form-submit, .contact-btn {
     padding: 4rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+}
+
+.services-overview::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(45, 45, 45, 0.5) 0%, transparent 100%);
+    pointer-events: none;
 }
 
 .services-overview h2 {
@@ -271,6 +283,18 @@ a, button, input[type="submit"], .cta-button, .form-submit, .contact-btn {
     background: var(--secondary);
     padding: 4rem 2rem;
     border-top: 1px solid var(--accent);
+    position: relative;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(26, 26, 26, 0.8) 0%, rgba(45, 45, 45, 0.4) 100%);
+    pointer-events: none;
 }
 
 .about-content {
@@ -315,6 +339,18 @@ a, button, input[type="submit"], .cta-button, .form-submit, .contact-btn {
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(45, 45, 45, 0.5) 0%, transparent 100%);
+    pointer-events: none;
 }
 
 .contact h2 {
