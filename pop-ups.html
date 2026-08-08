@@ -79,7 +79,12 @@
             <a href="index.html" class="logo" style="display: flex; align-items: center;">
                 <img src="logo.png" alt="Casa Raíz" style="height: 60px; width: 60px;">
             </a>
-            <ul class="nav-menu">
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="pop-ups.html" class="active">Pop-Ups</a></li>
                 <li><a href="catas-vino.html">Catas de Vino</a></li>
@@ -306,6 +311,22 @@
 
         document.addEventListener('mouseleave', () => {
             cursor.style.opacity = '0';
+        });
+
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
         });
     </script>
 </body>
