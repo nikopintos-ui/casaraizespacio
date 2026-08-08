@@ -674,6 +674,96 @@ a, button, input[type="submit"], .cta-button, .form-submit, .contact-btn {
     box-shadow: 0 6px 20px rgba(201, 169, 97, 0.3);
 }
 
+/* Flyers Slider */
+.flyers-slider {
+    padding: 4rem 2rem;
+    background: var(--secondary);
+}
+
+.flyers-slider h2 {
+    text-align: center;
+    color: var(--accent);
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.slider-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.slider-btn {
+    background: var(--accent);
+    color: var(--primary);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.slider-btn:hover {
+    background: #dbb76f;
+    transform: scale(1.1);
+}
+
+.slider-wrapper {
+    flex: 1;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 1.5rem;
+}
+
+.slider-item {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.flyer-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(201, 169, 97, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: var(--accent);
+    width: 25px;
+    border-radius: 5px;
+}
+
 /* Responsive */
 .hamburger {
     display: none;
@@ -766,5 +856,34 @@ a, button, input[type="submit"], .cta-button, .form-submit, .contact-btn {
     .contact-btn {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
+    }
+
+    /* Mobile slider adjustments */
+    .flyers-slider {
+        padding: 2rem 0.5rem;
+    }
+
+    .slider-container {
+        gap: 0.25rem;
+    }
+
+    .slider-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 0.9rem;
+    }
+
+    .flyer-img {
+        max-width: 100vw;
+        height: auto;
+    }
+
+    .flyers-slider h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .slider-dots {
+        margin-top: 1rem;
     }
 }
