@@ -474,6 +474,73 @@ a, button, input[type="submit"], .cta-button, .form-submit, .contact-btn {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* Event Items */
+.event-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.event-item:hover {
+    background: rgba(212, 175, 55, 0.05);
+    transform: translateX(4px);
+}
+
+.event-item.past {
+    opacity: 0.6;
+    border-color: var(--text-dark);
+}
+
+.event-date {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.5px;
+}
+
+.event-dj {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    margin-top: 0.3rem;
+}
+
+.event-link {
+    padding: 0.7rem 1.5rem;
+    background: var(--accent);
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    margin-left: 1rem;
+}
+
+.event-link:hover {
+    background: #dbb76f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(201, 169, 97, 0.3);
+}
+
+.event-link.disabled {
+    background: var(--text-dark);
+    color: var(--primary);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.event-link.disabled:hover {
+    background: var(--text-dark);
+    transform: none;
+    box-shadow: none;
+}
+
 .contact-form {
     background: var(--secondary);
     padding: 2rem;
