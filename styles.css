@@ -812,6 +812,15 @@ a, button, input[type="submit"], .cta-button, .form-submit, .contact-btn {
 }
 
 @media (max-width: 768px) {
+    /* Disable custom cursor on mobile */
+    html {
+        cursor: auto;
+    }
+
+    .cursor {
+        display: none;
+    }
+
     .hamburger {
         display: flex;
     }
